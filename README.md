@@ -1,4 +1,5 @@
 # Sistem Pemesanan Kendaraan
+Sistem Pemesanan Kendaraan adalah proyek yang diberikan oleh perusahan Sekawan Media untuk menguji calon peserta magang. Masih terdapat banyak kekurangan dari sistem yang saya buat ini. Oleh karena itu, saya mohon maaf dan terimakasih atas perhatiannya.
 
 ## Tools and Version
 - Mysql: 8.0.34

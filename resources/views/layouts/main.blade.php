@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 
   <!-- Font Awesome Css -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="{{ asset('fontawesome/css/all.min.css') }}">
 </head>
 <body class="bg-gray-100">
   <!-- Wrapper -->
@@ -39,7 +39,7 @@
   <!-- End Wrapper -->
 
   <!-- Font Awesome Js -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+  <script src="{{ asset('fontawesome/js/all.min.js') }}"></script>
 
   <!-- Main Script -->
   <script src="{{ asset('js/script.js') }}"></script>
