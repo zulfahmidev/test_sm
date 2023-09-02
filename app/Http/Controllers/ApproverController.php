@@ -57,17 +57,20 @@ class ApproverController extends Controller
         $this->validate($request, [
             'fullname' => 'required|string',
             'position' => 'required|string',
-            'username' => ['required', 'string', 'max:255', 'unique:users,username', 'alpha_dash'],
-            'password' => 'required',
+            'username' => ['required', 'string', 'max:255', 'unique:users,username,'.$approver->id, 'alpha_dash'],
         ]);
         
         $approver->update([
             'fullname' => strtolower(trim($request->fullname)),
             'position' => strtolower(trim($request->position)),
             'username' => strtolower(trim($request->username)),
-            'password' => Hash::make(trim($request->password)),
             'role' => 'approver',
         ]);
+        if ($request->password) {
+            $approver->update([
+                'password' => Hash::make(trim($request->password))
+            ]);
+        }
 
         return redirect()->route('approver.index');
     }

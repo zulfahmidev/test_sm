@@ -24,15 +24,15 @@
         @enderror
       </div>
       <div class="mb-2">
-        <label for="username" value="{{ $approver->username }}" class="mb-1 block">Username:</label>
-        <input type="text" placeholder="ketik disini..." class="input" id="username" name="username">
+        <label for="username" class="mb-1 block">Username:</label>
+        <input type="text" value="{{ $approver->username }}" placeholder="ketik disini..." class="input" id="username" name="username">
         @error('username')
         <div class="text-xs text-red-500 mt-1">{{ $message }}</div>
         @enderror
       </div>
       <div class="mb-2">
         <label for="password" class="mb-1 block">Password:</label>
-        <input type="password" placeholder="ketik disini..." class="input" id="password" name="password">
+        <input type="password" autocomplete="off" placeholder="ketik disini..." class="input" id="password" name="password">
         @error('password')
         <div class="text-xs text-red-500 mt-1">{{ $message }}</div>
         @enderror

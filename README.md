@@ -10,10 +10,10 @@
 | Fullname    |   Username  |   Password  |     Role    |
 |-------------|-------------|-------------|-------------|
 | Super Admin |    admin    |    admin    |    admin    |
-| Pegawai 1 |    pegawai1    |    12345    |    approver    |
-| Pegawai 2 |    pegawai2    |    12345    |    approver    |
-| Pegawai 3 |    pegawai3    |    12345    |    approver    |
-| Pegawai 4 |    pegawai4    |    12345    |    approver    |
+| pimpinan 1 |    pimpinan1    |    12345    |    approver    |
+| pimpinan 2 |    pimpinan2    |    12345    |    approver    |
+| pimpinan 3 |    pimpinan3    |    12345    |    approver    |
+| pimpinan 4 |    pimpinan4    |    12345    |    approver    |
 
 ## Instalation
 1. Pastikan anda sudah menginstall tools sesuai dengan versi di atas.
