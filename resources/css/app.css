@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .sidebar-active {
+    @apply border-r-2 border-blue-500 bg-blue-50 text-blue-500;
+  }
+  .table {
+    width: 100%;
+  }
+  .table td, th {
+    padding: .5rem .8rem;
+  }
+  .table thead tr {
+    @apply bg-blue-500 text-white;
+  }
+  .table tbody tr {
+    @apply bg-blue-50;
+  }
+  .table tbody tr:nth-child(odd) {
+    @apply bg-blue-100;
+  }
+
+  .input {
+    @apply py-2 px-3 block w-full bg-gray-50 border border-gray-400 rounded focus:border-blue-400 outline-none;
+  }
+
+  .input-select {
+    @apply py-2 px-3 w-full bg-gray-50 rounded outline-none border border-gray-400 focus:border-blue-300;
+  }
+
+  .input-note {
+    @apply text-xs text-gray-400 mb-1;
+  }
+
+  .select-item {
+    @apply px-3 py-2 [&:nth-child(even)]:bg-blue-100 [&:nth-child(odd)]:bg-blue-50 [&:nth-child(even)]:hover:bg-blue-200 [&:nth-child(odd)]:hover:bg-blue-200 flex justify-between hover:bg-blue-200 cursor-pointer;
+  }
+}
