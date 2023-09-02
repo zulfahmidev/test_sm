@@ -41,3 +41,12 @@
     ```
     php artisan serve
     ```
+9. Jika anda menjalankan di localhost maka copy url berikut ke browser anda untuk membuka sistem pemesanan kendaraan.
+
+    ```
+    http://localhost:8000
+    ```
+
+## Login
+1. Buka sistem pemesanan kendaraan.
+2. Masukan username serta password sesuai dengan [daftar users](#users) di atas.
