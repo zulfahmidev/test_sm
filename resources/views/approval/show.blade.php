@@ -40,7 +40,7 @@
       </tr>
       <tr>
         <th>Durasi</th>
-        <td class="capitalize">{{ $booking->estimated_duration }}</td>
+        <td class="capitalize">{{ $booking->estimated_duration }} Hari</td>
       </tr>
       <tr>
         <th>Penyetujui</th>

@@ -22,7 +22,7 @@ class BookingController extends Controller
         })
         ->join('drivers', 'drivers.id', '=', 'bookings.driver_id')
         ->join('vehicles', 'vehicles.id', '=', 'bookings.vehicle_id')
-        ->selectRaw('bookings.id, bookings.customer_name, bookings.vehicle_id, bookings.driver_id, bookings.usage_at, bookings.created_at, bookings.updated_at')
+        ->selectRaw('bookings.id, bookings.customer_name, bookings.vehicle_id, bookings.driver_id, bookings.usage_at, bookings.created_at, bookings.estimated_duration, bookings.updated_at')
         ->latest()->paginate(10);
 
         return view('booking.index', compact('bookings'));

@@ -1,7 +1,7 @@
 @extends('layouts.main')
 
 @section('content')
-  <h1 class="text-3xl">Tambah Data Pengemudi</h1>
+  <h1 class="text-3xl">Detail Pengemudi</h1>
   <div class="bg-white rounded px-6 lg:px-12 w-full lg:max-w-lg py-6 lg:py-10 shadow my-5">
     <a href="{{ route('driver.index') }}" class="flex text-gray-500 w-fit hover:text-blue-500 rounded mb-2 ">
       <div class="flex items-center px-2"><i class="fa fa-arrow-left fa-fw"></i></div>
