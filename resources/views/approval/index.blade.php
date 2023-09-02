@@ -35,9 +35,9 @@
             <td>{{ $approval->usage_at }}</td>
             <td class="hidden lg:table-cell">{{ $approval->estimated_duration }} Hari</td>
             <td class="hidden lg:table-cell">
-              <form action="{{ route('approval.update', ['approval' => $approval->id]) }}" method="post" id="status">
+              <form action="{{ route('approval.update', ['approval' => $approval->id]) }}" method="post" id="status-{{$approval->id}}">
                 @csrf @method('PUT')
-                <select name="status" onchange="document.querySelector('#status').submit()" class="px-3 py-2 
+                <select name="status" onchange="document.querySelector('#status-{{$approval->id}}').submit()" class="px-3 py-2 
                   @if($approval->status == 'approved') bg-green-500 @elseif($approval->status == 'rejected') bg-red-500 @else bg-gray-500 @endif rounded text-white outline-none">
                   <option class="bg-white text-black" @if($approval->status == 'panding') selected @endif value="panding">Panding</option>
                   <option class="bg-white text-black" @if($approval->status == 'approved') selected @endif value="approved">Disetujui</option>

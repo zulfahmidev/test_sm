@@ -35,7 +35,7 @@
     DB_USERNAME=fahmi
     DB_PASSWORD=password
     ```
-7. Import file database.sql ke database yang sudah anda buat sebelumnya.
+7. Import file db_sm_test.sql ke database yang sudah anda buat sebelumnya.
 8. Jalankan perintah berikut untuk menjalankan runtime laravel:
 
     ```

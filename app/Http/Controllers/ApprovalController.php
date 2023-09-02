@@ -27,6 +27,7 @@ class ApprovalController extends Controller
     }
 
     public function show(Approval $approval) {
+        dd($approval->toArray());
         $booking = Booking::find($approval->booking_id);
         return view('approval.show', compact('approval', 'booking'));
     }
